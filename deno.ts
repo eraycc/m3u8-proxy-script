@@ -18,11 +18,11 @@ import { serve } from "https://deno.land/std@0.177.0/http/server.ts";
 // Configuration
 const CONFIG = {
   PORT: 8000,
-  PROXY_URL: 'https://proxy.mengze.vip/proxy/',                                 // Main proxy URL (leave empty for direct fetch)
-  PROXY_URLENCODE: true,                        // Whether to URL-encode target URLs
+  PROXY_URL: '',                                 // Main proxy URL (leave empty for direct fetch)
+  PROXY_URLENCODE: false,                        // Whether to URL-encode target URLs
   
-  PROXY_TS: 'https://proxy.mengze.vip/proxy/',   // TS segment proxy URL
-  PROXY_TS_URLENCODE: true,                      // Whether to URL-encode TS URLs
+  PROXY_TS: 'https://y.demo.lhyang.org/',   // TS segment proxy URL
+  PROXY_TS_URLENCODE: false,                      // Whether to URL-encode TS URLs
   
   CACHE_ENABLED: true,
   CACHE_TTL: 3600,                               // Cache TTL in seconds
